@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="giohang.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="product_item">
+        <div class="img">
+          <img src="../img/bg.jpg" alt="" />
+        </div>
+        <div class="text_product">
+          <h3>quan ao</h3>
+          <p>20.000.000</p>
+        </div>
+        <div class="btn_quantity">
+          <div class="long_short">
+            <button id="long">+</button>
+            <input type="text" id="dulieu" value="1" />
+            <button id="short">-</button>
+          </div>
+        </div>
+        <button id="buy">buynow</button>
+      </div>
+      <!-- 2 -->
+      <div class="product_item">
+        <div class="img">
+          <img src="../img/bg.jpg" alt="" />
+        </div>
+        <div class="text_product">
+          <h3>vay</h3>
+          <p>30.000.000</p>
+        </div>
+        <div class="btn_quantity">
+          <div class="long_short">
+            <button id="long">+</button>
+            <input type="text" id="dulieu" value="1" />
+            <button id="short">-</button>
+          </div>
+        </div>
+        <button id="buy">buynow</button>
+      </div>
+      <!-- 3 -->
+      <div class="product_item">
+        <div class="img">
+          <img src="../img/bg.jpg" alt="" />
+        </div>
+        <div class="text_product">
+          <h3>dam</h3>
+          <p>25.000.000</p>
+        </div>
+        <div class="btn_quantity">
+          <div class="long_short">
+            <button id="long">+</button>
+            <input type="text" id="dulieu" value="1" />
+            <button id="short">-</button>
+          </div>
+        </div>
+        <button id="buy">buynow</button>
+      </div>
+      <!-- 4 -->
+      <div class="product_item">
+        <div class="img">
+          <img src="../img/bg.jpg" alt="" />
+        </div>
+        <div class="text_product">
+          <h3>quan ao</h3>
+          <p>50.000.000</p>
+        </div>
+        <div class="btn_quantity">
+          <div class="long_short">
+            <button id="long">+</button>
+            <input type="text" id="dulieu" value="1" />
+            <button id="short">-</button>
+          </div>
+        </div>
+        <button id="buy">buynow</button>
+      </div>
+    </div>
+
+    <script src="giohang.js"></script>
+    <script>
+      let btnItem = document.querySelectorAll(".product_item");
+      btnItem.forEach((button) => {
+        button.addEventListener("click", (e) => {
+          let img = e.target.parentNode.querySelector(".img img").src;
+          let name =
+            e.target.parentNode.querySelector(".text_product h3").textContent;
+          let price =
+            e.target.parentNode.querySelector(".text_product p").textContent;
+          let quantity = e.target.parentNode.querySelector("#dulieu").value;
+
+          let LocalStr = {
+            img: img,
+            name: name,
+            price: price,
+            quantity: quantity,
+          };
+          localStorage.setItem("product", JSON.stringify(LocalStr));
+        });
+      });
+    </script>
+  </body>
+</html>

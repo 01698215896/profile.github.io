@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    max-width: 90%;
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    width: 100%;
+    position: relative;
+    max-width: 90%;
+    display: flex;
+
+}
+button{
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 8px;
+    margin: 0 10px;
+    width: 300px;
+    height: 60px;
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+#thanhcong{
+    background: green;
+}
+#khongthanhcong{
+    background: orange;
+}
+#loi{
+    background: red;
+}
+.errol{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+.success{
+    padding: 20px;
+    background-color: rgba(0, 128, 0, 0.4);
+    border-radius: 8px;
+    color: #fff;
+    border-left: 5px solid green;
+    position: relative;
+    animation: qualai 3s ease;
+    display: none;
+    margin-bottom: 10px;
+}
+.success i{
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #333;
+}
+.animation{
+    position: absolute;
+    width: 100%;
+    max-width: 90%;
+    background: green;
+    height: 5px;
+    bottom: 0;
+    left: 0;
+    animation: linesuccess 2s ease ;
+}
+.tt{
+    background-color: rgba(255, 166, 0, 0.4);
+    border-left: 5px solid orange;
+}
+.uu{
+    background-color: rgba(255, 0, 0, 0.4);
+    border-left: 5px solid red;
+}
+.aa{
+    background: orange;
+}
+.bb{
+    background: red;
+}
+
+@keyframes linesuccess{
+    0%{
+        width: 100%;
+    }
+    100%{
+        width: 0%;
+    }
+}
+
+@keyframes qualai{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(10px);
+    }
+    50%{
+        transform: translateX(-10px);
+    }
+    75%{
+        transform: translateX(10px);
+    }
+    100%{
+    transform: translateX(200%);
+    }
+}
+
+@media (max-width: 420px) {
+    .container {
+        flex-direction: column;
+    }
+    button{
+        width: 90%;
+        padding: 0;
+        margin: 10px 0;
+    }
+    body{
+        height: 100vh;
+        margin: 0;
+    }
+}

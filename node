@@ -1,0 +1,14 @@
+- API Thời Tiết:
+https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}
+
+- KEY API:
+f53c4e33081de4d197282bd11e04192e
+
+- API lấy tọa độ:
+https://nominatim.openstreetmap.org/search?q=${vitri}&format=json
+
+- LINK Jquery:
+https://code.jquery.com/jquery-3.6.0.min.js
+
+- LINK Bootstrap:
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">

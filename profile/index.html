@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <style>
+      
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <div class="hinh">
+          <img src="../img/logo.jpg" alt="" />
+        </div>
+        <h3>Hoang Tien</h3>
+      </div>
+      <div class="navbar">
+        <ul class="menu">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#skill">Skill</a></li>
+          <li><a href="#project">Project</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="drak1">
+            <input type="checkbox" id="anidrak" hidden>
+            <label for="anidrak" id="label"></label>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="container-content" id="home">
+        <p class="title">welcom to my profile</p>
+        <h1>
+          Hi, I'm Hoang Tien <br />
+          a
+          <div class="gradien">
+            <div
+              id="anim"
+              data-jod="{FrontEnd.}"
+              data-jod1="{Developer.}"
+            ></div>
+          </div>
+        </h1>
+        <p class="context_ctn">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged.
+        </p>
+        <h3 class="ctn-ct">Contact Me</h3>
+        <ul class="contact-ctn">
+          <li>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="container-img">
+        <img src="../img/logo.jpg" alt="" />
+      </div>
+    </div>
+    <div id="skill">
+      <h1>Skill</h1>
+
+      <div class="listskill">
+        <div class="skill1">
+          <p>Html</p>
+          <div class="skil-ani" style="--point: 80%"></div>
+        </div>
+        <div class="skill1">
+          <p>Css</p>
+          <div class="skil-ani" style="--point: 90%"></div>
+        </div>
+        <div class="skill1">
+          <p>Javascript</p>
+          <div class="skil-ani" style="--point: 70%"></div>
+        </div>
+        <div class="skill1">
+          <p>ReacJs</p>
+          <div class="skil-ani" style="--point: 65%"></div>
+        </div>
+        <div class="skill1">
+          <p>NodeJs</p>
+          <div class="skil-ani" style="--point: 88%"></div>
+        </div>
+        <div class="skill1">
+          <p>Boostrap</p>
+          <div class="skil-ani" style="--point: 76%"></div>
+        </div>
+        <div class="skill1">
+          <p>Jquery</p>
+          <div class="skil-ani" style="--point: 80%"></div>
+        </div>
+        <div class="skill1">
+          <p>Angular</p>
+          <div class="skil-ani" style="--point: 95%"></div>
+        </div>
+      </div>
+    </div>
+    <div id="project">
+      <h1>Project</h1>
+      <div class="list-project">
+        <div class="list1">
+          <img src="../img/hinh4.jpg" alt="" />
+          <div class="pj-name">
+            <p class="name-ps">API Thời Tiết</p>
+            <p class="mota">
+              - Cách Lấy API <br />
+              - Lấy dữ liệu API <br />
+              - Thay dữ liệu từ API vào DOM
+            </p>
+          </div>
+          <div class="btn-pj">
+            <a href="../api/api.html">Xem Chi Tiết</a>
+          </div>
+        </div>
+        <div class="list1">
+          <img src="../img/hinh3.jpg" alt="" />
+          <div class="pj-name">
+            <p class="name-ps">Thông Báo Messger</p>
+            <p class="mota">
+              - Tạo button 3 nút <br />
+              - Tạo 3 message khi click <br />
+              - Hiện mesage
+            </p>
+          </div>
+          <div class="btn-pj">
+            <a href="../animationMessage/message.html">Xem Chi Tiết</a>
+          </div>
+        </div>
+        <div class="list1">
+          <img src="../img/hinh2.jpg" alt="" />
+          <div class="pj-name">
+            <p class="name-ps">Text Aimation</p>
+            <p class="mota">
+              - Css Cho Đoạn Text <br />
+              - Tạo Animation <br />
+              - Tạo hiệu ứng theo mốc thời gian
+            </p>
+          </div>
+          <div class="btn-pj">
+            <a href="../animationText/text.html">Xem Chi Tiết</a>
+          </div>
+        </div>
+        <div class="list1">
+          <img src="../img/hinh1.jpg" alt="" />
+          <div class="pj-name">
+            <p class="name-ps">Canvas</p>
+            <p class="mota">
+              - Tạo khung canvas <br />
+              - Lấy tọa độ khi di chuột <br />
+              - Đổi màu và clear khung canvas
+            </p>
+          </div>
+          <div class="btn-pj">
+            <a href="../canvas/draw.html">Xem Chi Tiết</a>
+          </div>
+        </div>
+        <div class="list1">
+          <img src="../img/hinh4.jpg" alt="" />
+          <div class="pj-name">
+            <p class="name-ps">API Thời Tiết</p>
+            <p class="mota">
+              - Cách Lấy API <br />
+              - Lấy dữ liệu API <br />
+              - Thay dữ liệu từ API vào DOM
+            </p>
+          </div>
+          <div class="btn-pj">
+            <a href="../api/api.html">Xem Chi Tiết</a>
+          </div>
+        </div>
+        <div class="list1">
+          <img src="../img/hinh3.jpg" alt="" />
+          <div class="pj-name">
+            <p class="name-ps">Thông Báo Messger</p>
+            <p class="mota">
+              - Tạo button 3 nút <br />
+              - Tạo 3 message khi click <br />
+              - Hiện mesage
+            </p>
+          </div>
+          <div class="btn-pj">
+            <a href="../animationMessage/message.html">Xem Chi Tiết</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="contact">
+      <h1>Contact For Me</h1>
+      <div class="contact-me">
+        <ul class="contact-ctn">
+          <li>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

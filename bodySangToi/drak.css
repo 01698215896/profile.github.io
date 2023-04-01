@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    --background: #fff;
+    --color-title: blue;
+    --bg-btn: blue;
+    --color-text-btn: #3b3b3b;
+    --lable: green;
+    --bg-lable: #c6c6c6;
+    background-color: var(--background);
+    display: flex;
+    justify-content: center;
+}
+
+body.drak1{
+    --background: #2c2d2c;
+    --color-title: green;
+    --bg-btn: green;
+    --color-text-btn: #3b3b3b;
+    --lable: #fff;
+    --bg-lable: #3b3b3b;
+}
+
+.container{
+    width: 100%;
+    max-width: 90%;
+    
+}
+.header{
+    max-width: 90%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: center;
+    padding: 15px 0;
+}
+.logo h2{
+    color: var(--color-title);
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.drak{
+    width: 75px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: var(--bg-lable);
+    padding: 5px 7px;
+}
+label{
+    width: 30px;
+    height: 30px;
+    background-color: var(--lable);
+    border-radius: 50%;
+    display: block;
+    transition:  0.2s ease;
+    cursor: pointer;
+}
+.drak input:checked + label{
+    margin-left: 60px;
+    transform: translateX(-100%);
+}
+
+.content{
+    max-width: 90%;
+    width: 100%;
+    margin: 100px auto;
+    text-align: center;
+}
+.title h2{
+    font-size: 50px;
+}
+.text_content p{
+    background-color: var(--color-text-btn);
+    color: #a2a2a2;
+    padding: 25px;
+    border-radius: 10px;
+    line-height: 30px;
+    font-size: 20px;
+    text-align: justify;
+    margin: 15px 0;
+}
+.btn button{
+    width: 150px;
+    padding: 15px 15px;
+    border: none;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 15px 25px;
+    color: #fff;
+    font-size: 20px;
+    background: var(--bg-btn);
+    cursor: pointer;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="giohang.css">
+</head>
+<body>
+    <div class="container">
+        <div class="product_item">
+          <!-- <div class="img">
+            <img src="../img/bg.jpg" alt="" />
+          </div>
+          <div class="text_product">
+            <h3>quan ao</h3>
+            <p>20.000.000</p>
+          </div>
+          <div class="btn_quantity">
+            <div class="long_short">
+              <button id="long">+</button>
+              <input type="text" id="dulieu" value="1" />
+              <button id="short">-</button>
+            </div>
+          </div> -->
+        </div>
+        <div class="mua">
+          <button id="buy">buynow</button>
+
+        </div>
+    </div>
+
+    <script>
+        let product  = document.querySelector('.product_item')
+        let showProduc = ()=>{
+            let valuestr = JSON.parse(localStorage.getItem('product',product))
+            console.log(valuestr)
+            
+            let cart = `<div class="img">
+            <img src="${(valuestr.img)}" alt="" />
+          </div>
+          <div class="text_product">
+            <h3>${valuestr.name}</h3>
+            <p>${valuestr.price}</p>
+          </div>
+          <div class="btn_quantity">
+            <div class="long_short">
+              <button id="long">+</button>
+              <input type="text" id="dulieu" value="${valuestr.quantity}" />
+              <button id="short">-</button>
+            </div>
+          </div>`
+
+          product.innerHTML += cart;
+
+        }
+        showProduc( )
+    </script>
+</body>
+</html>

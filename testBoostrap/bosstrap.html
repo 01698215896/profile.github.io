@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Responsive Navbar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      nav {
+        background-color: #f2f2f2;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        z-index: 999;
+      }
+      nav label {
+        display: none;
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        font-size: 30px;
+        color: #333;
+        z-index: 1000;
+      }
+      nav ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        font-size: 18px;
+      }
+      nav ul li a {
+        padding: 10px;
+        color: #333;
+        text-decoration: none;
+      }
+      nav ul li a:hover {
+        color: #fff;
+        background-color: #333;
+      }
+
+      @media only screen and (max-width: 468px) {
+        nav ul {
+          position: absolute;
+          top: 60px;
+          left: 0;
+          right: 0;
+          background-color: #f2f2f2;
+          padding: 10px;
+          transform: translateX(-100%);
+        }
+        nav ul li a {
+          display: block;
+          padding: 5px 0;
+          border-bottom: 1px solid #ccc;
+        }
+        nav label {
+          display: block;
+        }
+        nav input[type="checkbox"]:checked ~ ul {
+          display: flex;
+          flex-direction: column;
+          transition: 1s ease-in-out;
+          animation: bb 1s linear forwards;
+        }
+        @keyframes bb {
+          from {
+            transform: translateX(-100%);
+          }
+          to {
+            transform: translateX(0);
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <label for="toggle">&#9776;</label>
+      <input type="checkbox" id="toggle" hidden />
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>
