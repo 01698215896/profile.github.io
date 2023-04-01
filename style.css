@@ -40,7 +40,6 @@ body.drak {
 
 header {
   width: 100%;
-  max-width: 90%;
   display: grid;
   grid-template-columns: 30% 70%;
   padding: 10px 20px;
